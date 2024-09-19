@@ -6,7 +6,9 @@
     <title>Registration Form</title>
     <style>
         body {
-            background-color: #e0f7fa; 
+            background: url('file:///D:/html%20prg/nature.jpg.jpg') no-repeat center center fixed;
+            background: url('file:///C:/Users/ELCOT/Music/flower.jpeg') no-repeat center center fixed;
+            background: url('file:///C:/Users/ELCOT/Music/butterfly.jpg') no-repeat center center fixed;
             font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
@@ -17,7 +19,7 @@
         .container {
             text-align: left; 
             max-width: 500px;
-            background: white;
+            background: rgb(201, 163, 201);
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -25,7 +27,7 @@
         }
         h1 {
             text-align: center;
-            color: #00796b;
+            color: #00796b; 
         }
         label {
             font-weight: bold; 
@@ -75,13 +77,40 @@
         a:hover {
             text-decoration: underline;
         }
+        @media screen and (max-width: 1600px) {
+            body { background: url('file:///D:/html%20prg/nature.jpg.jpg') no-repeat center center fixed;
+            background-size:cover ; 
+        }
+        }
+        @media screen and (max-width: 1500px) {
+            body { background: url('file:///C:/Users/ELCOT/Music/leaf.jpg') no-repeat center center fixed ;
+                background-size:cover ;
+             }
+        }
+        @media screen and (max-width: 1400px) {
+            body { 
+                background: url('file:///C:/Users/ELCOT/Music/leaf.jpg') no-repeat center center fixed ;
+                background-size:cover ;
+             }
+        }
+        @media screen and (max-width: 1300px) {
+            body {
+                 background: url('flower.jpeg') no-repeat center center fixed ;
+                background-size:cover ; 
+            }
+        }
+        @media screen and (max-width: 1200px) {
+            body { background: url('file:///C:/Users/ELCOT/Music/butterfly.jpg') no-repeat center center fixed ;
+                background-size:cover ; 
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
         <h1><u>Registration Form</u></h1>
-        <form action="index.html" method="get">
+        <form action="Sign in.html" method="get">
             <label for="fname">First Name:</label>
             <input type="text" id="fname" name="fname" required>
             
@@ -135,7 +164,7 @@
                 <input type="submit" value="Submit">
                 <input type="reset" value="Reset">
             </div>
-            <a href="index.html">Go to Sign In</a>
+            <a href="Sign_in.html">Go to Sign In</a>
         </form>
     </div>
 </body>
